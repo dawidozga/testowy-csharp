@@ -9,46 +9,38 @@ namespace ConsoleApplication1
     public class User
     {
         private string name;
-        private string surname;
+        private string lastname;
         private int age;
+
+        public User()
+        {
+
+        }
+
+        public User(string name, string lastname, int age)
+        {
+            this.name = name;
+            this.lastname = lastname;
+            this.age = age;
+        }
 
         public string Name
         {
-            get
-            {
-                return name;
-            }
-
-            set
-            {
-                name = value;
-            }
+            get { return name;}
+            set {name = value;}
         }
 
         public string Surname
         {
-            get
-            {
-                return surname;
-            }
-
-            set
-            {
-                surname = value;
-            }
+            get { return lastname; }
+            set {lastname = value; }
         }
 
         public int Age
         {
-            get
-            {
-                return age;
-            }
-
-            set
-            {
-                age = value;
-            }
+            get { return age; }
+            set { age = value; }
         }
+
     }
 }
